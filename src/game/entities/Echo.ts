@@ -11,7 +11,7 @@ export class Echo extends Entity {
         this.color = 'rgba(255, 255, 255, 0.4)'; // Ghostly
     }
 
-    update(dt: number) {
+    update(_dt: number) {
         const snapshot = this.recorder.getSnapshotAt(this.delay);
         if (snapshot) {
             this.x = snapshot.x;

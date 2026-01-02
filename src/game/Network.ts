@@ -2,7 +2,7 @@ import { io, Socket } from "socket.io-client";
 import type { PlayerState } from "./NetworkTypes";
 
 export class Network {
-    private socket: Socket;
+    public socket: Socket;
     public otherPlayers: Map<string, PlayerState> = new Map();
     public playerId: string = "";
 

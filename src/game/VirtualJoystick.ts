@@ -94,10 +94,10 @@ export class VirtualJoystick {
 
         stickZone.addEventListener('touchstart', (e) => {
             const touch = e.changedTouches[0];
-            const rect = stickZone.getBoundingClientRect();
+            // const rect = stickZone.getBoundingClientRect();
             // Center of zone
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
+            // const centerX = rect.left + rect.width / 2;
+            // const centerY = rect.top + rect.height / 2;
 
             startX = touch.clientX;
             startY = touch.clientY;
@@ -108,6 +108,7 @@ export class VirtualJoystick {
         stickZone.addEventListener('touchmove', (e) => {
             const touch = e.changedTouches[0];
             const rect = stickZone.getBoundingClientRect();
+            // Center is implied by CSS/layout logic, calculating relative to rect
             const centerX = rect.left + rect.width / 2;
             const centerY = rect.top + rect.height / 2;
 

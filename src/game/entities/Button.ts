@@ -11,7 +11,7 @@ export class Button extends Entity {
         this.color = '#888';
     }
 
-    update(dt: number) {
+    update(_dt: number) {
         // Logic handled by Level
     }
 

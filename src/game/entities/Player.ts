@@ -1,7 +1,7 @@
 import { Entity } from "./Entity";
 import { Input } from "../Input";
 import { Level } from "../Level";
-import { checkAABB, GRAVITY, JUMP_FORCE, MOVE_SPEED, MAX_FALL_SPEED, type Rect } from "../Physics";
+import { checkAABB, GRAVITY, JUMP_FORCE, MOVE_SPEED, MAX_FALL_SPEED } from "../Physics";
 import { audio } from "../Audio";
 
 export class Player extends Entity {
