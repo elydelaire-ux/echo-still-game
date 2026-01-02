@@ -90,20 +90,20 @@ export class VirtualJoystick {
         const stickZone = document.getElementById('stick-zone')!;
         const stick = document.getElementById('stick')!;
 
-        let startX = 0, startY = 0;
+        // let startX = 0, startY = 0;
 
-        stickZone.addEventListener('touchstart', (e) => {
-            const touch = e.changedTouches[0];
-            // const rect = stickZone.getBoundingClientRect();
-            // Center of zone
-            // const centerX = rect.left + rect.width / 2;
-            // const centerY = rect.top + rect.height / 2;
+        // stickZone.addEventListener('touchstart', (e) => {
+        //     const touch = e.changedTouches[0];
+        //     // const rect = stickZone.getBoundingClientRect();
+        //     // Center of zone
+        //     // const centerX = rect.left + rect.width / 2;
+        //     // const centerY = rect.top + rect.height / 2;
 
-            startX = touch.clientX;
-            startY = touch.clientY;
+        //     // startX = touch.clientX;
+        //     // startY = touch.clientY;
 
-            // Initial snap if not exactly center? actually joystick usually recenters.
-        });
+        //     // Initial snap if not exactly center? actually joystick usually recenters.
+        // });
 
         stickZone.addEventListener('touchmove', (e) => {
             const touch = e.changedTouches[0];
